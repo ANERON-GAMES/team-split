@@ -1,0 +1,42 @@
+{
+  "name": "@aneron/team-split",
+  "version": "1.0.0",
+  "description": "Deterministic team balancing that splits rated players into teams with minimal rating spread.",
+  "license": "MIT",
+  "author": "Vadim Gubin",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANERON-GAMES/team-split.git"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "teams",
+    "matchmaking",
+    "balance",
+    "ratings"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
